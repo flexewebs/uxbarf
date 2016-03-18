@@ -6,7 +6,7 @@ $description    = array();
 
 /* Sentence structure [Noun] [Verb] [Preposition] [Noun] */
 
-$noun           = array('Design', 'Information Architecture', 'Experience', 'Blueprint', 'Solution', 'Problem', 'Stakeholder', 'Designer', '');
+$noun           = array('Design', 'Information Architecture', 'Experience', 'Blueprint', 'Solution', 'Problem', 'Stakeholder', 'Designer', 'Idea', 'Facts', 'Virtual Reality');
 $verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design');
 $preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for');
 
@@ -24,10 +24,11 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html class="<?php echo $verb[0];?>">
     <head>
         <meta charset="UTF-8">
         <title><?php echo $sentence; ?></title>
+        <link href="barf.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
     <body>
         <h1><?php echo $sentence; ?></h1>        
