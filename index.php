@@ -6,14 +6,36 @@ $description    = array();
 
 /* Sentence structure [Noun] [Verb] [Preposition] [Noun] */
 
+// Some regular words here 
+// $noun           = array('Plant', 'Book', 'Receiver', 'Fireplace', 'Door', 'Ball', 'Floor', 'Ceiling', 'Wall', 'Clock', 'Grenade', 'Tank', 'Bomb', 'Nuke', 'Atom', 'Robot', 'Laser', 'Ass', 'Balls', 'Toilet', 'Pants', 'Tea', 'Sofa', 'Carpet', 'Boy', 'TV');
+// $verb           = array('run', 'jump', 'swim', 'hop', 'sprint', 'walk', 'sleep', 'eat', 'bombard', 'shoot', 'type', 'pump', 'blow', 'juice', 'destroy', 'wee', 'poo', 'whack', 'throw', 'listen', 'smell', 'watch');
+
 $noun           = array('Design', 'Information Architecture', 'Experience', 'Blueprint', 'Solution', 'Problem', 'Stakeholder', 'Designer', 'Idea', 'Facts', 'Virtual Reality');
 $verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design');
-$preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for');
+$preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for', 'above', 'into', 'over', 'past', 'like', 'near', 'next');
 
 shuffle($noun);
+$s = substr($noun[0], -1);
+if($s!='s') { 
+    $s='s';
+}
+else
+{
+    $s = '';
+}
+
 shuffle($verb);
+$e   = substr($verb[0], -1);
+if($e=='s') { 
+    $e = 'e';
+}
+else
+{
+    $e = '';
+}
+
 shuffle($preposition);
-$sentence = $noun[0]." ".$verb[0]." ".$preposition[0];
+$sentence = $noun[0]." ".$verb[0].$e.$s." ".$preposition[0];
 
 shuffle($noun);
 $sentence       = $sentence." ".strtolower($noun[1])."."; 

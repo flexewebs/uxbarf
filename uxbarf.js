@@ -1,0 +1,45 @@
+var noun        = ['Design', 'Information Architecture', 'Experience', 'Blueprint', 'Solution', 'Problem', 'Stakeholder', 'Designer', 'Idea', 'Facts', 'Virtual Reality'];
+var verb        = ['discuss', 'will', 'think', 'wonder', 'believe', 'design'];
+var preposition = ['beneath', 'to', 'up', 'as', 'in', 'for'];
+
+// Creates a sentence out of array elements 
+function createSentence() { 
+    var sentence    = noun[1] + ' ' + verb[1] + ' ' + preposition[1];    
+    return sentence;
+}
+
+
+// Image switcher code
+
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+	var mySrc = myImage.getAttribute('src');
+	if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute ('src','images/firefox2.png');
+	} else {
+	  myImage.setAttribute ('src','images/firefox-icon.png');
+	}
+}
+
+// Personalized welcome message code
+
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
+
+function setUserName() {
+  var myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
