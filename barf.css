@@ -26,7 +26,10 @@ and open the template in the editor.
 .six body { background: #0098d8; }
 .six h1 { color: #0b3536; }
 
-h1 { font-weight: normal; text-align: center; }
+body { margin: 0; padding: 0; }
+
+h1 { font-weight: normal; text-align: center; margin: 0 2em; }
+
 /* Mobile styles */
 @media only screen and (max-width : 600px) {
     h1 { font-size: 3em; }    
@@ -34,10 +37,10 @@ h1 { font-weight: normal; text-align: center; }
 
 /* Tablet devices */
 @media only screen and (max-width : 992px) {
-    h1 { font-size: 4em; margin: 10vh 2em 0 2em; }
+    h1 { font-size: 4em; }
 } 
 
 /* Desktop devices */
 @media only screen and (min-width : 992px) {
-    h1 { font-size: 5em; margin: 40vh 2em 0 2em; }
+    h1 { font-size: 5em; margin-top: 30vh; }
 } 
