@@ -14,8 +14,8 @@ include("functions.php");
 // $verb           = array('run', 'jump', 'swim', 'hop', 'sprint', 'walk', 'sleep', 'eat', 'bombard', 'shoot', 'type', 'pump', 'blow', 'juice', 'destroy', 'wee', 'poo', 'whack', 'throw', 'listen', 'smell', 'watch');
 
 $determiner     = array('The', 'A', 'An');
-$noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality');
-$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design');
+$noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality', 'research', 'personas', 'process', 'brand', 'visuals', 'wireframe', 'sketch');
+$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design', 'develop', 'iterate', 'scrap', 'undermine', 'dislike', 'like');
 $preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for', 'above', 'into', 'over', 'past', 'like', 'near', 'next');
 
 shuffle($determiner);
@@ -37,7 +37,7 @@ else
 
 $determiner[1] = fixDeterminer($noun[1], $determiner[1]);
 
-$sentence = ucfirst($determiner[0]).' '. $noun[0].' '.$verb[0].$e.$s.' '.$preposition[0].' '.strtolower($determiner[1]).' '.strtolower($noun[1]).'.'; 
+$sentence = ucfirst($determiner[0]).' '. $noun[0].' '.$verb[0].$e.$s.' '.$preposition[0].' '.strtolower($determiner[1]).' '.$noun[1].'.'; 
 ?>
 <!DOCTYPE html>
 <!--

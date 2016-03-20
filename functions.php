@@ -31,8 +31,15 @@ function checkVowel($letter){
 
 // Fixes preposition to create a correct sentence 
 function fixDeterminer($word, $determiner) { 
-    $firstLetter = checkLetter($word);    
+    $firstLetter    = checkLetter($word);    
+    $lastLetter     = checkLetter($word, 'last');    
 
+    if($lastLetter=='s') { 
+        $determiner = 'the';
+        return $determiner;
+        exit;
+    }
+    
     if(checkVowel($firstLetter)!=0) { 
         if($determiner=='a' || $determiner=='A') {        
             $determiner = 'an';
