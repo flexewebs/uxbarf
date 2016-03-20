@@ -13,8 +13,8 @@
 
 $style          = array('one', 'two', 'three', 'four', 'five', 'six');
 $determiner     = array('The', 'A', 'An');
-$noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality', 'research', 'personas', 'process', 'brand', 'visuals', 'wireframe', 'sketch');
-$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design', 'develop', 'iterate', 'scrap', 'undermine', 'dislike', 'like');
+$noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality', 'research', 'personas', 'process', 'brand', 'visuals', 'wireframe', 'sketch', 'service', 'user journey', 'channel', 'social media', 'medium', 'web', 'app', 'technology', 'business');
+$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design', 'develop', 'iterate', 'scrap', 'undermine', 'dislike', 'like',);
 $preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for', 'above', 'into', 'over', 'past', 'like', 'near', 'next');
 
 shuffle($determiner);
