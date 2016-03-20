@@ -4,7 +4,7 @@
 function checkLetter($word, $position='first') { 
     
     if($position == 'first') { 
-        $letter = $word;
+        $letter = $word[0];
     }
     else
     {
@@ -17,7 +17,7 @@ function checkLetter($word, $position='first') {
 // Check if the letter is a vowel 
 function checkVowel($letter){ 
     
-    $vowels = array('a', 'o', 'i', 'e', 'u');
+    $vowels = array('a', 'o', 'i', 'e', 'u', 'A', 'I', 'E', 'O', 'U');
     $isVowel = 0;
     
     for($i=0; $i<count($vowels); $i++) { 
@@ -32,12 +32,18 @@ function checkVowel($letter){
 // Fixes preposition to create a correct sentence 
 function fixDeterminer($word, $determiner) { 
     $firstLetter = checkLetter($word);    
-    
-    if($determiner=='a') {
-        if(checkVowel($firstLetter)!=0) { 
+
+    if(checkVowel($firstLetter)!=0) { 
+        if($determiner=='a' || $determiner=='A') {        
             $determiner = 'an';
         }
-    } 
+    }
+    else
+    {
+        if($determiner=='an' || $determiner=='An') {        
+            $determiner = 'a';
+        }
+    }
     
     return $determiner;
 }

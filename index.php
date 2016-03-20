@@ -25,10 +25,15 @@ shuffle($preposition);
 
 $determiner[0] = fixDeterminer($noun[0], $determiner[1]);
 
-
-if(checkLetter($noun[0], 'last')!='s') { $s='s'; } else { $s=''; } 
-
-if(checkLetter($verb[0], 'last')=='s') { $e='e'; } else { $e=''; } 
+if(checkLetter($noun[0], 'last')!='s') 
+{ 
+    $s='s';     
+    if(checkLetter($verb[0], 'last')=='s') { $e='e'; } else { $e=''; } 
+} 
+else 
+{ 
+    $s='';     
+} 
 
 $determiner[1] = fixDeterminer($noun[1], $determiner[1]);
 
