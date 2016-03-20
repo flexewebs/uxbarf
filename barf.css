@@ -33,10 +33,10 @@ and open the template in the editor.
 
 /* Tablet devices */
 @media only screen and (max-width : 992px) {
-    h1 { font-size: 3em; font-weight: normal; margin: 10vh 2em 0 2em; text-align: center; }
+    h1 { font-size: 4em; font-weight: normal; margin: 10vh 2em 0 2em; text-align: center; }
 } 
 
 /* Desktop devices */
 @media only screen and (min-width : 992px) {
-    h1 { font-size: 4em; font-weight: normal; margin: 40vh 2em 0 2em; text-align: center; }
+    h1 { font-size: 5em; font-weight: normal; margin: 40vh 2em 0 2em; text-align: center; }
 } 

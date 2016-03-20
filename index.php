@@ -15,7 +15,7 @@ include("functions.php");
 
 $determiner     = array('The', 'A', 'An');
 $noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality');
-$verb           = array('discuss'); //, 'will', 'think', 'wonder', 'believe', 'design'
+$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design');
 $preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for', 'above', 'into', 'over', 'past', 'like', 'near', 'next');
 
 shuffle($determiner);
@@ -48,8 +48,9 @@ and open the template in the editor.
 <html class="<?php echo $verb[0];?>">
     <head>
         <meta charset="UTF-8">
-        <title><?php echo $sentence; ?></title>
+        <title>UX Barf - Barfing up UX nonsense</title>
         <link href="barf.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="apple-touch-icon" href="i/icon.png">  
     </head>
     <body>
         <h1><?php echo $sentence; ?></h1>        
