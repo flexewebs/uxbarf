@@ -1,8 +1,11 @@
 <?php
-$actor          = array('I', 'We', 'You', 'He', 'She', 'It', 'They');
-$emotion        = array('love', 'hate', 'dislike', 'like');
-$uxthing        = array('experience', 'information architecture', 'wireframes', 'design', 'users', 'sketches', 'concept', 'stakeholder', 'research');
-$description    = array();
+
+include("functions.php");
+
+//$actor          = array('I', 'We', 'You', 'He', 'She', 'It', 'They');
+//$emotion        = array('love', 'hate', 'dislike', 'like');
+//$uxthing        = array('experience', 'information architecture', 'wireframes', 'design', 'users', 'sketches', 'concept', 'stakeholder', 'research');
+//$description    = array();
 
 /* Sentence structure [Noun] [Verb] [Preposition] [Noun] */
 
@@ -10,35 +13,26 @@ $description    = array();
 // $noun           = array('Plant', 'Book', 'Receiver', 'Fireplace', 'Door', 'Ball', 'Floor', 'Ceiling', 'Wall', 'Clock', 'Grenade', 'Tank', 'Bomb', 'Nuke', 'Atom', 'Robot', 'Laser', 'Ass', 'Balls', 'Toilet', 'Pants', 'Tea', 'Sofa', 'Carpet', 'Boy', 'TV');
 // $verb           = array('run', 'jump', 'swim', 'hop', 'sprint', 'walk', 'sleep', 'eat', 'bombard', 'shoot', 'type', 'pump', 'blow', 'juice', 'destroy', 'wee', 'poo', 'whack', 'throw', 'listen', 'smell', 'watch');
 
-$noun           = array('Design', 'Information Architecture', 'Experience', 'Blueprint', 'Solution', 'Problem', 'Stakeholder', 'Designer', 'Idea', 'Facts', 'Virtual Reality');
-$verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design');
+$determiner     = array('The', 'A', 'An');
+$noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality');
+$verb           = array('discuss'); //, 'will', 'think', 'wonder', 'believe', 'design'
 $preposition    = array('beneath', 'to', 'up', 'as', 'in', 'for', 'above', 'into', 'over', 'past', 'like', 'near', 'next');
 
+shuffle($determiner);
 shuffle($noun);
-$s = substr($noun[0], -1);
-if($s!='s') { 
-    $s='s';
-}
-else
-{
-    $s = '';
-}
-
 shuffle($verb);
-$e   = substr($verb[0], -1);
-if($e=='s') { 
-    $e = 'e';
-}
-else
-{
-    $e = '';
-}
-
 shuffle($preposition);
-$sentence = $noun[0]." ".$verb[0].$e.$s." ".$preposition[0];
 
-shuffle($noun);
-$sentence       = $sentence." ".strtolower($noun[1])."."; 
+$determiner[0] = fixDeterminer($noun[0], $determiner[1]);
+
+
+if(checkLetter($noun[0], 'last')!='s') { $s='s'; } else { $s=''; } 
+
+if(checkLetter($verb[0], 'last')=='s') { $e='e'; } else { $e=''; } 
+
+$determiner[1] = fixDeterminer($noun[1], $determiner[1]);
+
+$sentence = ucfirst($determiner[0]).' '. $noun[0].' '.$verb[0].$e.$s.' '.$preposition[0].' '.strtolower($determiner[1]).' '.strtolower($noun[1]).'.'; 
 ?>
 <!DOCTYPE html>
 <!--
