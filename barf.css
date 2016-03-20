@@ -8,23 +8,23 @@ and open the template in the editor.
     Author     : jasongrant
 */
 
-.discuss body { background: #22313F; }
-.discuss h1 { color: #1E8BC3; }
+.one body { background: #22313F; }
+.one h1 { color: #1E8BC3; }
 
-.will body { background: #db2f27; }
-.will h1 { color: #e6c700; font-family: sans-serif; }
+.two body { background: #db2f27; }
+.two h1 { color: #e6c700; font-family: sans-serif; }
 
-.think body { background: #e1e0dd; }
-.think h1 { color: #35342f; font-family: serif; } 
+.three body { background: #e1e0dd; }
+.three h1 { color: #35342f; font-family: serif; } 
 
-.wonder body { background: #0d0f05; }
-.wonder h1 { color: #ec6b2d; font-family: verdana; }
+.four body { background: #0d0f05; }
+.four h1 { color: #ec6b2d; font-family: verdana; }
 
-.believe body { background: #f45844; }
-.believe h1 { color: #fff; }
+.five body { background: #f45844; }
+.five h1 { color: #fff; }
 
-.design body { background: #0098d8; }
-.design h1 { color: #0b3536; }
+.six body { background: #0098d8; }
+.six h1 { color: #0b3536; }
 
 /* Mobile styles */
 @media only screen and (max-width : 600px) {

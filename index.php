@@ -13,6 +13,7 @@ include("functions.php");
 // $noun           = array('Plant', 'Book', 'Receiver', 'Fireplace', 'Door', 'Ball', 'Floor', 'Ceiling', 'Wall', 'Clock', 'Grenade', 'Tank', 'Bomb', 'Nuke', 'Atom', 'Robot', 'Laser', 'Ass', 'Balls', 'Toilet', 'Pants', 'Tea', 'Sofa', 'Carpet', 'Boy', 'TV');
 // $verb           = array('run', 'jump', 'swim', 'hop', 'sprint', 'walk', 'sleep', 'eat', 'bombard', 'shoot', 'type', 'pump', 'blow', 'juice', 'destroy', 'wee', 'poo', 'whack', 'throw', 'listen', 'smell', 'watch');
 
+$style          = array('one', 'two', 'three', 'four', 'five', 'six');
 $determiner     = array('The', 'A', 'An');
 $noun           = array('design', 'Information Architecture', 'experience', 'blueprint', 'solution', 'problem', 'stakeholder', 'designer', 'idea', 'facts', 'Virtual Reality', 'research', 'personas', 'process', 'brand', 'visuals', 'wireframe', 'sketch');
 $verb           = array('discuss', 'will', 'think', 'wonder', 'believe', 'design', 'develop', 'iterate', 'scrap', 'undermine', 'dislike', 'like');
@@ -45,7 +46,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html class="<?php echo $verb[0];?>">
+<html class="<?php shuffle($style); echo $style[0];?>">
     <head>
         <meta charset="UTF-8">
         <title>UX Barf - Barfing up UX nonsense</title>
