@@ -50,7 +50,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>UX Barf - Barfing up UX nonsense</title>
         <link href="barf.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link rel="apple-touch-icon" href="i/icon.png">  
+        <link rel="apple-touch-icon" href="icon.png">          
     </head>
     <body>
         <h1><?php echo $sentence; ?></h1>        
