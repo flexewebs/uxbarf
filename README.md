@@ -2,7 +2,7 @@
 
 A language experiment that creates random UX statements which are complete barf, but to some people might sound like sense.
 
-<table> 
+<table style="border:0;"> 
     <tr>
         <td><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12783384_989938461091899_1391513814_n.jpg" /></td>
         <td><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/10727455_862909747188508_1699229329_n.jpg" /></td>
