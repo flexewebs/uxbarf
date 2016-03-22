@@ -14,8 +14,6 @@ A language experiment that creates random UX statements which are complete barf,
 
 It's tricky to formulate proper English sentences as there are so many weird and wonderful quasi-rules in the way the language works.
 
-
-
 #Example output 
 
 [UX Barf Instagram](http://instagram.com/uxbarf).
@@ -61,3 +59,12 @@ Some of the sentences I've managed to generate with this include:
 * 'A Network develops beneath an Information Architecture.'
 * 'A designer wills for the visuals.'
 * 'A channel designs up a service.'
+
+#Bugs and challenges 
+
+* I'm trying to write something smarter here 
+* English language structure is really tricky to deal with
+* Sentences are still somewhat buggy and don't make as much sense as they could 
+* I want to turn this into a more artistic output, both in terms of look and feel (of the content) 
+* Needs to be AJAX driven, instead of a PHP refresh
+* Nicer typography 
