@@ -1,9 +1,6 @@
-# UX Barf
+# UX Barf - Barfing up UX gumpf 
+
 A language experiment that creates random UX statements which are complete barf, but to some people might sound like sense.
-
-Check out [how this thing runs](http://flexewebs.com/labs/uxbarf).
-
-It's tricky to formulate proper English sentences as there are so many weird and wonderful quasi-rules in the way the language works.
 
 <table> 
     <tr>
@@ -13,8 +10,15 @@ It's tricky to formulate proper English sentences as there are so many weird and
     </tr> 
 </table> 
 
+[Live version of UX Barf](http://flexewebs.com/labs/uxbarf).
+
+It's tricky to formulate proper English sentences as there are so many weird and wonderful quasi-rules in the way the language works.
+
+
 
 #Example output 
+
+[UX Barf Instagram](http://instagram.com/uxbarf).
 
 Some of the sentences I've managed to generate with this include: 
 
