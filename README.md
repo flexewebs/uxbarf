@@ -7,6 +7,10 @@ It's tricky to formulate proper English sentences as there are so many weird and
 
 ![Instagram image](https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12783384_989938461091899_1391513814_n.jpg)
 
+![Instagram image](https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/10727455_862909747188508_1699229329_n.jpg)
+
+![Instagram image](https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/1171092_1751949361704744_1175033411_n.jpg)
+
 #Example output 
 
 Some of the sentences I've managed to generate with this include: 
