@@ -49,18 +49,17 @@ and open the template in the editor.
         <link href="barf.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link rel="apple-touch-icon" href="icon.png">          
         <link rel="stylesheet" href="css/foundation.css" />
-        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/app.css" />        
     </head>
     <body>
         <div class="row">
             <div class="small-12 columns">
-                <h1><?php echo $sentence; ?></h1>        
+                <a href="index.php"><h1><?php echo $sentence; ?></h1></a>     
             </div>
         </div>
-    
-        <script src="js/vendor/jquery.min.js"></script>
-        <script src="js/vendor/what-input.min.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/app.js"></script>    
     </body>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
 </html>

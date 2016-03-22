@@ -1,12 +1,5 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 18-Mar-2016, 00:50:45
-    Author     : jasongrant
-*/
+body { margin: 0; padding: 0; }
+h1 { font-weight: normal; text-align: center; margin: 0 2em; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); vertical-align: middle; }
 
 .one body { background: #22313F; }
 .one h1 { color: #1E8BC3; }
@@ -26,21 +19,17 @@ and open the template in the editor.
 .six body { background: #0098d8; }
 .six h1 { color: #0b3536; }
 
-body { margin: 0; padding: 0; }
-
-h1 { font-weight: normal; text-align: center; margin: 0 2em; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-
 /* Mobile styles */
 @media only screen and (max-width : 600px) {
-    h1 { font-size: 10em; }    
+    .row .small-12 h1 { font-size: 3em; }
 } 
 
 /* Tablet devices */
 @media only screen and (max-width : 992px) {
-    h1 { font-size: 4em; }
+    .row .small-12 h1 { font-size: 4em; }
 } 
 
 /* Desktop devices */
 @media only screen and (min-width : 992px) {
-    h1 { font-size: 10em; }
+    .row .small-12 h1 { font-size: 5em; }
 } 
