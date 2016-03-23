@@ -1,6 +1,15 @@
 # UX Barf - Barfing up UX gumpf 
 
+##What is this? 
+
 A language experiment that creates random UX statements which are complete barf, but to some people might sound like sense.
+
+##The idea 
+
+I'm playing around with language. Trying to create a word 'wisdom' art on the subject of UX, but also other subject that can be feed into the data set.
+There's something funny and verging on inspirational about computer generated sentences about UX.
+
+##Example output
 
 <table> 
     <tr>
@@ -13,13 +22,15 @@ A language experiment that creates random UX statements which are complete barf,
     </tr> 
 </table> 
 
-[Live version of UX Barf](http://flexewebs.com/labs/uxbarf).
+##Try it out
 
-It's tricky to formulate proper English sentences as there are so many weird and wonderful quasi-rules in the way the language works.
+[Live version of UX Barf](http://bit.ly/uxbarf).
 
-#Example output 
+##Instagram feed of output statements
 
 [UX Barf Instagram](http://instagram.com/uxbarf).
+
+##Other examples of output
 
 Some of the sentences I've managed to generate with this include: 
 
@@ -63,8 +74,9 @@ Some of the sentences I've managed to generate with this include:
 * 'A designer wills for the visuals.'
 * 'A channel designs up a service.'
 
-#Bugs and challenges 
+##Bugs and challenges 
 
+* It's tricky to formulate proper English sentences as there are so many weird and wonderful quasi-rules in the way the language works.
 * I'm trying to write something smarter here 
 * English language structure is really tricky to deal with
 * Sentences are still somewhat buggy and don't make as much sense as they could 
