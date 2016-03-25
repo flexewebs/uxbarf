@@ -54,14 +54,15 @@ and open the template in the editor.
     <body>
         <div class="row">
             <div class="small-12 columns">
-                <a href="index.php"><h1><?php echo $sentence; ?></h1></a>     
+                <a href="index.php" onclick="responsiveVoice.speak('<?php echo $sentence;?>', 'UK English Male');"><h1><?php echo $sentence; ?></h1></a>                   
             </div>
         </div>
     </body>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="js/app.js"></script>    
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

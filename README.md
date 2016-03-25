@@ -73,6 +73,8 @@ Some of the sentences I've managed to generate with this include:
 * 'A Network develops beneath an Information Architecture.'
 * 'A designer wills for the visuals.'
 * 'A channel designs up a service.'
+* 'A design iterates over an app.'
+* 'A designer thinks in a stakeholder.'
 
 ##Bugs and challenges 
 
